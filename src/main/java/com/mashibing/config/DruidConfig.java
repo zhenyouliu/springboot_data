@@ -28,11 +28,11 @@ public class DruidConfig {
         ServletRegistrationBean<Servlet> servletRegistrationBean = new ServletRegistrationBean<>(new StatViewServlet(),"/druid/*");
         Map<String,String> initParams = new HashMap<>();
         initParams.put("loginUsername","admin");
-        initParams.put("loginPassword","123456");
+        initParams.put("loginPassword","362341");
         //后台允许谁可以访问
         //initParams.put("allow", "localhost")：表示只有本机可以访问
         //initParams.put("allow", "")：为空或者为null时，表示允许所有访问
-        initParams.put("allow","");
+        initParams.put("allow","localhost");
         //deny：Druid 后台拒绝谁访问
 //        initParams.put("deny", "192.168.1.20");//表示禁止此ip访问
 
